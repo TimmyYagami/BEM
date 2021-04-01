@@ -1,0 +1,41 @@
+@import "./var";
+
+@mixin b($namespace,$block) {
+  // 重新定义一个变量B
+  $B: $namespace+'-'+$block !global;
+  // #取表达式里面的值，编译完成就是.el-btn
+  .#{$B}{
+    //放入原有样式
+    @content
+  }
+}
+
+// .z-button.is-dissabled
+@mixin when($state) {
+  // 声明在根下，跳出所有父级选择器
+  @at-root {
+    &.#{$state-prefix + $state}{
+      @content;
+    }
+  }
+}
+
+
+// &--primary ==> .el-button--primary
+@mixin m($modifier) {
+  @at-root {
+    #{ & + $modifier-separator + $modifier }{
+      @content;
+    }
+  }
+}
+
+@mixin e($element){
+  @at-root{
+    &{
+      #{"." + $B + $element-separator + $element}{
+        @content
+      }
+    }
+  }
+}

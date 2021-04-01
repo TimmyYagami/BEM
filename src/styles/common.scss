@@ -1,0 +1,13 @@
+// 公共样式
+
+#app{
+  background-image: url(~@/assets/jinMenBei/bgImg.png);
+  background-size: 100% 100%;
+  min-height: 100%;
+}
+
+.fcenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

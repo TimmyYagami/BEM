@@ -1,0 +1,22 @@
+@import "./mixin";
+@import './common';
+
+
+// 默认样式
+body, html {
+  margin: 0;
+  padding: 0;
+  min-width: 1226px;
+  height: 100%;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+}
+
+a{text-decoration: none;}
+a:hover, a:visited, a:link, a:active {
+  color:#333;
+  // 设置使所有a标签的四种状态都和本身颜色保持一致，样式代码自己写
+}

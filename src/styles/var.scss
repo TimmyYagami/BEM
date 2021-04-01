@@ -1,0 +1,17 @@
+$--color-primary:#000;
+$--color-white:#000;
+$--color-black:#000;
+$--color-success:#000;
+$--color-warning:#000;
+$--color-danger:#000;
+$--color-info:#fff;
+
+
+// BEM 代码块 元素 修饰符
+// el-button__header 按钮模块的 头部代码
+// el-button--info  按钮模块的info状态样式
+// is-distable 禁用状态的代码
+$namespace:'el';//修饰命名空间
+$state-prefix:'is-';// 修饰状态
+$modifier-separator:'--';// 修饰类型
+$element-separator:'__';// 划分空间分隔符
